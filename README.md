@@ -1,4 +1,4 @@
-# Koodi101 chat example
+# Lesson 3: NodeJS Template
 
 This is the repository for a simple chat application using
 [koa](http://koajs.com/), a Node.js web server framework, and [sequelize](http://docs.sequelizejs.com/), which maintains the SQLite database.
