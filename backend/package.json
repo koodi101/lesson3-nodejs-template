@@ -16,17 +16,17 @@
   },
   "dependencies": {
     "kcors": "^2.2.2",
-    "koa": "^2.11.0",
+    "koa": "^2.13.4",
     "koa-bodyparser": "^4.3.0",
     "koa-logger": "^3.2.1",
-    "koa-router": "^8.0.8",
-    "sequelize": "^5.21.8",
-    "sqlite3": "^4.2.0"
+    "koa-router": "^10.1.1",
+    "sequelize": "^6.16.2",
+    "sqlite3": "^5.0.2"
   },
   "devDependencies": {
-    "eslint": "^7.0.0",
-    "eslint-config-airbnb": "^18.1.0",
-    "eslint-plugin-import": "^2.20.2",
-    "nodemon": "^2.0.3"
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.25.4",
+    "nodemon": "^2.0.15"
   }
 }
