@@ -36,7 +36,6 @@ const createChat = async (ctx) => {
   const { message, room } = body;
 
   const chat = await database.Chat.create({ message, room });
-  console.log(chat);
 
   ctx.body = chat;
   ctx.status = 201;
