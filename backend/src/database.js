@@ -7,7 +7,8 @@ const sequelize = new Sequelize({
   storage: './db/chat.sqlite',
 });
 
-// Initialize chat table with text field "message"
+// Initialize chat table with a required (not null)
+// text field "message"
 const Chat = sequelize.define('chats', {
   message: {
     // Message field is a string
@@ -22,4 +23,5 @@ const Chat = sequelize.define('chats', {
 // Re-export sequelize database synchronization method
 exports.sync = (options) => sequelize.sync(options);
 
+// Export the sequelize model to be used in asynchronous middleware
 exports.Chat = Chat;
