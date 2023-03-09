@@ -1,4 +1,4 @@
-# Koodi101 chat example
+# Lesson 3: NodeJS Template
 
 This is the repository for a simple Node.js chat application using
 [koa](http://koajs.com/) (a web server framework) and [sequelize](http://docs.sequelizejs.com/), which maintains the SQLite database.
@@ -39,19 +39,25 @@ You should now see something similar to
 
 ### The app
 
-- Use [HTTpie](https://httpie.ie/) to
+- Use [HTTPie](https://httpie.io/) to
   - Post a new message to _/api/chats_
   - Get the messages from _/api/chats_
 
 ![httpie](./httpie.png)
 
+> For more information on how to use the HTTPie CLI, refer to [the official documentation](https://httpie.io/docs/cli/examples).
+
 ### Deploy
 
 - Use SSH keys to login to the server
-- Install needed dependencies
+- Install needed dependencies on the server
+  - `node`
+  - `tmux`
 - Start a `tmux` session
 - Run `npm start`
 - (Detach `CTRL-B D` and log out `CTRL-D`)
+
+> Note: Deploying production software services using tmux and a shell is not recommended. This guide is only for getting up to speed.
 
 ## Optional homework
 
