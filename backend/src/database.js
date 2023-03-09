@@ -20,8 +20,8 @@ const Chat = sequelize.define('chats', {
   timestamps: true,
 });
 
-// Re-export sequelize database synchronization method
-exports.sync = (options) => sequelize.sync(options);
+// Export the sequelize instance
+exports.sequelize = sequelize
 
 // Export the sequelize model to be used in asynchronous middleware
 exports.Chat = Chat;
