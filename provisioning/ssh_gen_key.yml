@@ -1,0 +1,9 @@
+- name: "Generate SSH keypair for {{ hostvars[item].inventory_hostname }}"
+  delegate_to: localhost
+  connection: local
+  ansible.builtin.openssh_keypair:
+    path: "./ssh_keys/id_rsa_koodi101_{{ hostvars[item].inventory_hostname }}"
+    type: rsa
+    size: 4096
+    state: present
+    force: no
