@@ -44,3 +44,9 @@ backend/doc
 # ides
 *.idea
 *.iml
+
+# SSH keys
+id_rsa_*
+
+# Logs
+*.log
